@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 interface CardProps {
   total?: boolean;
@@ -27,7 +28,11 @@ export const Buttons = styled.div`
     text-decoration: none;
     align-items: center;
     color: #fff;
+    transition: background-color 0.2s;
 
+    &:hover {
+      background-color: ${shade(0.2, '#ff872c')};
+    }
     svg {
       color: #fff;
       display: flex;
@@ -47,6 +52,12 @@ export const Buttons = styled.div`
     height: 100%;
     width: 14.7%;
     align-items: center;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: ${shade(0.2, '#ff872c')};
+    }
+
     svg {
       color: #fff;
       display: flex;
