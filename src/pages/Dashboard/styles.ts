@@ -11,6 +11,50 @@ export const Container = styled.div`
   padding: 40px 20px;
 `;
 
+export const Buttons = styled.div`
+  margin-left: 0px;
+  margin-top: 30px;
+  max-width: 100%;
+  height: 40px;
+
+  a {
+    height: 100%;
+    display: inline-flex;
+    flex: 1;
+    border-radius: 10px;
+    width: 14.7%;
+    background-color: #ff872c;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+
+    svg {
+      color: #fff;
+      display: flex;
+      flex: 1;
+    }
+
+    & + button {
+      margin-left: 2%;
+    }
+  }
+  button {
+    display: inline-flex;
+    flex: 1;
+    border-radius: 10px;
+    background-color: #ff872c;
+    border: 0;
+    height: 100%;
+    width: 14.7%;
+    align-items: center;
+    svg {
+      color: #fff;
+      display: flex;
+      flex: 1;
+    }
+  }
+`;
+
 export const Title = styled.h1`
   font-size: 48px;
   color: #3a3a3a;
@@ -48,7 +92,7 @@ export const Card = styled.div`
 `;
 
 export const TableContainer = styled.section`
-  margin-top: 64px;
+  margin-top: 24px;
 
   table {
     width: 100%;
@@ -81,6 +125,10 @@ export const TableContainer = styled.section`
 
       &.outcome {
         color: #e83f5b;
+      }
+      svg {
+        cursor: pointer;
+        color: #d35636;
       }
     }
 
